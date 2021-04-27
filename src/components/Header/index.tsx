@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 import { ptBR } from 'date-fns/locale';
 
 export const Header = () => {
-  const currentDate = format(new Date(), 'EEEEEE d MMMM', {
+  const currentDate = format(new Date(), 'EEEEEE, d MMMM', {
     locale: ptBR,
   });
 
@@ -15,4 +15,4 @@ export const Header = () => {
 
     <span>{ currentDate }</span>
   </header>
-}
+};

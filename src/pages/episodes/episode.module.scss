@@ -31,7 +31,7 @@
       &:last-child {
         right: 0;
         top: 50%;
-        background: var(--purple-500);
+        background: var(--green-500);
         transform: translate(50%, -50%);
       }
 
@@ -59,15 +59,17 @@
         padding-left: 1rem;
         position: relative;
 
-        content: '';
-        width: 4px;
-        height: 4px;
-        border-radius: 2px;
-        background: #ddd;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        &::before {
+          content: '';
+          width: 4px;
+          height: 4px;
+          border-radius: 2px;
+          background: #ddd;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
     }
   }

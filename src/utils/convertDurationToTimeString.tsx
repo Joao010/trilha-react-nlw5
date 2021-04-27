@@ -8,4 +8,4 @@ export const convertDurationToTimeString = (duration: number) => {
   .join(':');
 
   return timeString;
-}
+};
